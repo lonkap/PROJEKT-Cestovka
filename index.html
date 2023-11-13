@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cestovka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header class="header">
+    <!--logo--> 
+    <div class="header__logo">
+        <img src="img/logo.svg" alt="logo">
+    </div>
+    <!--menu-->
+    <ul class="header__menu fontM18R">
+        <li><a href="index.html" class="header__link  active"> Last minute</a></li>
+        <li><a href="destinace.html" class="header__link">Destinace</a></li>
+        <li><a href="caste_otazky.html" class="header__link">Časté otázky</a></li>
+    </ul>
+</header>
+
+<!--fotky-->
+<section class="photos">
+     <div class="foto">
+        <img src="img/palmy.png" class="photos__photo" alt="foto s palmami">
+        <p class="photo__price fontM18R">17 600 Kč</p>
+        <p class="photo__title1 fontM28S">Pohoda pod palmami</p>
+        <p class="photo__title font016R ">Dolená pro nejvíc nejlínější lidi na světě
+        </p>
+    </div>
+
+    <div class="foto">
+        <img src="img/jezero2.png" class="photos__photo" alt="foto s jezerem">
+        <p class="photo__price fontM18R">8 490 Kč</p>
+        <p class="photo__title fontM20S">Klid u jezera</p>
+    </div>   
+
+    <div class="foto">
+        <img src="img/nakole.png" class="photos__photo" alt="foto s cyklistou">
+        <p class="photo__price fontM18R">4 990 Kč</p>
+        <p class="photo__title fontM20S">Výlet na kole</p>
+    </div> 
+</section>
+
+ <!--karty s ikonami-->
+<section class="carts"> 
+    <div class="carts__cart">
+        <img src="img/map.svg"  class="cart__icon" alt="ikona destinace">
+        <div>
+            <h3 class="fontM18R cervena">Podpora na místě</h3>
+            <p>V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.</p>
+        </div>
+    </div>
+
+    <div class="carts__cart">
+        <img src="img/plane.svg"  class="cart__icon" alt="ikona letadla">
+         <div>
+            <h3 class="fontM18R cervena">Služby na letišti</h3>
+            <p>Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.</p>
+        </div>
+    </div>
+
+    <div class="carts__cart">
+        <img src="img/globe.svg" class="cart__icon" alt="ikona zeměkoule">
+        <div>
+           <h3 class="fontM18R cervena">Do celého světa</h3>
+            <p>Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.</p>
+        </div>
+    </div>
+
+    <div class="carts__cart">
+        <img src="img/shield.svg " class="cart__icon" alt="ikona štítu">
+        <div>
+            <h3 class="fontM18R cervena">Vaše bezpečí</h3>
+            <p>Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!--last minute-->
+<h2 class="fontM24S margin">Last minute zájezdy</h2>
+<section class="photos">
+    <div class="foto">
+        <img src="img/lodicka.png" alt="foto s lodí" class="photos__photo"> 
+       <p class="photo__price fontM18R"> 15 900 Kč</p>
+       <p class="photo__title1 fontM28S">Romantika u horského jezera</p>
+       <p class="photo__title font016R ">Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.
+       </p>
+   </div>
+
+   <div class="foto">
+    <img src="img/podkova.png" alt="foto kaňonu" class="photos__photo"> 
+       <p class="photo__price fontM18R">18 500 Kč</p>
+       <p class="photo__title fontM20S">Grand Canyon</p>
+   </div>   
+
+   <div class="foto">
+    <img src="img/zatoka.png" alt="foto zátoky" class="photos__photo">
+       <p class="photo__price fontM18R">8 900 Kč</p>
+       <p class="photo__title fontM20S">Pěšky po Kanárských ostrovech</p>
+   </div> 
+</section>
+
+<!--novinky-->
+<section class="news">
+    <h2 class="fontM24S margin">Novinky</h2>
+    <article class="news__article">
+        <p>15. 8. 2020</p>
+        <h3 class="fontM16R cervena">Zanzibar</h3>
+        <p class="fontM16R">Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře, exotická flóra i fauna.</p>
+    </article>
+
+    <article class="news__article">
+        <p>31. 9. 2020</p>
+        <h3 class="fontM16R cervena">Návrat českých občanů ze zahraničí</h3>
+        Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření Ministerstva zdravotnictví ČR.
+    </article>
+
+    <article class="news__article">
+        6. 10. 2020
+        <h3 class="fontM16R cervena">Na Kubu s PCR testem</h3>
+        Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před příletem do destinace.
+    </article>
+</section>
+
+<!--footer-->
+<footer class="footer">
+    ©2021, Czechitas
+</footer>
+
+</body>
+</html>

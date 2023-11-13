@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+.cervena {
+  color: #F03000;
+}
+
+.fontM16R {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.fontM18R {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.fontM28S {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.fontM24S {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.font016R {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.fontM24S {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24x;
+  font-weight: 600;
+}
+
+.fontM20S {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header__logo {
+  text-align: center;
+  margin: 36px auto 50px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__link {
+  text-decoration: none;
+  padding: 20px;
+}
+
+.header__link:hover, .active {
+  background-color: #F03000;
+  color: #FFFFFF;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.photos__photo {
+  width: 100%;
+}
+
+.photo__title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #FFFFFF;
+  margin: 20px;
+}
+
+.photo__title1 {
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  color: #FFFFFF;
+  margin: 20px;
+}
+
+.photo__price {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: #FFFFFF;
+  padding: 10px;
+  background-color: #F03000;
+  margin: 0 20px 0 0;
+}
+
+.foto {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.news__article {
+  background-color: #F0F0F0;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.carts__cart {
+  background-color: #F0F0F0;
+  display: flex;
+  padding: 20px;
+  margin: 20px 0;
+  align-items: flex-start;
+}
+
+.cart__icon {
+  flex: 0 0 20%;
+  max-height: 40px;
+  margin-top: 20px;
+}
+
+.margin {
+  margin-top: 40px;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #444444;
+  text-align: center;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
