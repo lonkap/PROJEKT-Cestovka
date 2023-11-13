@@ -12,6 +12,7 @@ $font: 'Montserrat', sans-serif;
 $font2: 'Open Sans', sans-serif;
 $padding: 20px;
 .cervena{color: $cervena;}
+
 .fontM16R {
     font-family: $font;
     font-size: 16px;
@@ -56,18 +57,20 @@ body{
 
 .header__logo{
     text-align: center;
-    margin:36px auto 50px;
+    padding-top: 36px;
+
   }
 
 ul{
     list-style: none;
-    margin:0;
-    padding:0;
+    padding:20px;
+   
 }
 .header__link{
     text-decoration: none;
-    padding: $padding;
-    
+    padding:$padding;
+    color: $cervena;
+  
 }
 
 .header__link:hover, .active{
@@ -77,9 +80,12 @@ ul{
 .header__menu{
     display: flex;
     justify-content: space-around;
+    margin:30px 0;
+    
 }
 .photos__photo{
     width: 100%;
+    
     
 }
 .photo__title{
@@ -87,7 +93,7 @@ ul{
     bottom: 20px;
     left: $padding;
     color: $bila;
-    margin:$padding;
+    margin: 0;
    
 }
 .photo__title1{
@@ -134,11 +140,56 @@ ul{
      
 }
 .margin{
-    margin-top: calc(2 * $padding);
+    margin-top: calc (2 * $padding);
+    
 }
 .footer{
     padding: $padding;
     background-color: $seda4;
     text-align: center;
     color: $bila;
+}
+h2{
+    margin:40px 0 0 0;
+}
+ //tablet
+@media  screen and (min-width:769px) {
+    header{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .photos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .photos :nth-child(1){
+        flex: 0 0 100%;
+    }
+    .photos :nth-child(2){
+        flex: 0 0 calc((100% - 20px) / 2)
+    }
+    .photos :nth-child(3){
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
+    .carts{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+    }
+    
+    .carts__cart{
+        flex-direction: column;
+        flex: 0 0 calc((100% - 20px) / 2);
+       align-items: center;
+       text-align: center;
+
+        
+    }
+   
+}
+//PC
+@media  screen and (min-width:960px) {
+    
 }
