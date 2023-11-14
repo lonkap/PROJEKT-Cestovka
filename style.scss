@@ -152,6 +152,10 @@ ul{
 h2{
     margin:40px 0 0 0;
 }
+
+.grid{
+    display: none;
+}
  //tablet
 @media  screen and (min-width:769px) {
     header{
@@ -187,6 +191,9 @@ h2{
 
         
     }
+    .grid{
+        display: none;
+    }
    
 }
 //PC
@@ -205,5 +212,56 @@ h2{
        text-align: center;
        
     }
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(2, 180px) ;
+    gap: 20px;
+
+
+}
+.obr1{
+    grid-area: 1/1/3/-2;
+    
+    background-image: url(img/palmy.png);
+    background-size: cover;
+}
+.obr2{
+    grid-area: 1/-2/2/-1;
+    background-image: url(img/jezero2.png);
+    background-size: cover;
+}
+.obr3{
+    grid-area: 2/-2/-1/-1;
+    background-image: url(img/nakole.png);
+    background-size: cover;
+}
+
+.obr4{
+    grid-area: 1/2/-1/-1;
+    
+    background-image: url(img/lodicka.png);
+    background-size: cover;
+}
+.obr5{
+    grid-area: 1/1/2/2;
+    background-image: url(img/zatoka.png);
+    background-size: cover;
+}
+.obr6{
+    grid-area: 2/1/-1/2;
+    background-image: url(img/podkova.png);
+    background-size: cover;
+}
+.PC{
+    display: none;
+}
+.obr1, .obr2, .obr3,.obr4,.obr5,.obr6{
+    position: relative;
+}
+
+
+
+
 }
 
