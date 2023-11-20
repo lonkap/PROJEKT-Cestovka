@@ -8,6 +8,7 @@ $seda2: #80808080;
 $seda3: #888888;
 $seda4: #444444;
 $cerna: #000000;
+$seda5: #E5E5E5;
 $font: 'Montserrat', sans-serif;
 $font2: 'Open Sans', sans-serif;
 $padding: 20px;
@@ -40,6 +41,12 @@ $padding: 20px;
     font-size: 16px;
     font-weight: 400;
  }
+ .font014R {
+    font-family: $font2;
+    font-size: 14px;
+    font-weight: 400;
+    color: $seda2;
+ }
  .fontM24S {
     font-family: $font;
     font-size: 24x;
@@ -50,6 +57,13 @@ $padding: 20px;
     font-size: 20px;
     font-weight: 600;
  }
+ .font028B{
+    font-family: $font2;
+    font-size: 28px;
+    font-weight: 600;
+ }
+
+
 body{
     padding-left: $padding;
     padding-right: $padding;
@@ -156,6 +170,32 @@ h2{
 .grid{
     display: none;
 }
+
+.hotelcard_1,
+.hotelcard_2,
+.hotelcard_3,
+.hotelcard_4
+{
+    background-color: $seda5;
+    padding: $padding;
+}
+
+.hotelcard_2,
+.hotelcard_3,
+.hotelcard_4
+{
+    margin-top: $padding;
+    
+}
+.hotelcard_4
+{
+    background-color: $cervena;
+    color: $bila;
+}
+.hotelcard p{
+    margin: 0;
+}
+
  //tablet
 @media  screen and (min-width:769px) {
     header{
@@ -194,7 +234,48 @@ h2{
     .grid{
         display: none;
     }
+   //umístění do gridu "časté otázky"
+.grid4{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: $padding;
+}
+
+.obr1{
+    grid-area: 1/1/2/-1;
+    background-image: url(img/palmy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
    
+    
+}
+.hotelcard{
+    grid-area: 2/1/3/-1;
+    
+}
+.otazky_text
+{grid-area: 3/1/4/-1;
+
+}
+.otazky_foto
+{
+    grid-area: 4/1/5/-1;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer{
+    grid-area: 5/1/6/-1;}
+.hotel{
+    width: 100%;
+    flex: 0 1 calc((100% - 40px) / 3);
+}
+
+
+
+
+
 }
 //PC
 @media  screen and (min-width:960px) {
@@ -260,8 +341,55 @@ h2{
     position: relative;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    padding: 0;
+}
+//umístění do gridu "časté otázky"
+.grid3{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: auto;
+    gap: $padding;
+}
 
-
+.obr1.palma{
+    grid-area: 1/1/2/2;
+    background-image: url(img/palmy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hotelcard{
+    grid-area: 1/-2/2/-1;
+    
+}
+.otazky_text
+{grid-area: 2/1/3/-2;
 
 }
+.otazky_foto
+{
+    grid-area: 3/1/4/-2;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer{
+    grid-area: 4/1/5/-1;}
+.hotel{
+    width: 100%;
+    flex: 0 1 calc((100% - 40px) / 3);
+}
+
+.body2{
+    padding: 0 120px;
+}
+
+}
+
+
 
